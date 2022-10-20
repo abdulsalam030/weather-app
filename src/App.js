@@ -16,7 +16,6 @@ function App() {
   const [humidity, setHumidity] = useState("");
   const [result, setResult] = useState();
   const [isLoading, setIsLoading] = useState(false);
-
   // const handleInput = () => {
   //   const res = fetch(
   //     `${api.base}weather?q=${query}&units=metric&APPID=${api.key}`
@@ -48,8 +47,9 @@ function App() {
     ).then((res) => {
       setIsLoading(false);
       return res.json();
-      // Hide loading screen
     });
+   
+    
   };
 
   const handleInput = async () => {
@@ -135,7 +135,7 @@ function App() {
                 {result ? result.main.temp : temp} °C
               </span>
             </div>
-            {/* <div className="weather">{result ? result.weather[0].main : cond}</div> */}
+             <div className="weather">{result ? result.weather[0].description : cond}</div> 
             <div className="location">
               <i className="bx bx-map"></i>
               <span>{result ? result.name : name}</span>,
