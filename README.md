@@ -1,3 +1,5 @@
+![weather](https://github.com/abdulsalam030/weather-app/assets/97962493/5757dd73-bfc3-4de0-80bc-b1e05b45d5d1)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
